@@ -1,6 +1,6 @@
 // .devcontainer/devcontainer.json
 {
-  "name": "hello-heroku",
+  "name": "${localWorkspaceFolderBasename}",
   "image": "thebearingedge/code-container",
   "mounts": [
     // get access to the host docker daemon
