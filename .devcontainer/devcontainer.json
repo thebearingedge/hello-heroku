@@ -3,6 +3,8 @@
   "name": "${localWorkspaceFolderBasename}",
   "image": "thebearingedge/code-container",
   "mounts": [
+    // share ssh config. remove this if you don't want to use a vscode user
+    "source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,type=bind",
     // get access to the host docker daemon
     "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
     // mount Git configuration
