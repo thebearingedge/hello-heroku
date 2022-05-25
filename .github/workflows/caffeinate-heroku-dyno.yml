@@ -2,7 +2,7 @@ name: Caffeinate Heroku Dyno on a CRON schedule
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 06-21 * * *'
 jobs:
   ping:
     name: Ping Dyno
